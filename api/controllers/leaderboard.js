@@ -26,10 +26,10 @@ router.get('/:id', async (req, res) => {
 // Create Leaderboard route
 router.post('/', async (req, res) => {
     try {
-        const leaderboard = await Leaderboard.create(req.body.name, req.body.score)
+        const leaderboard = await Leaderboard.create(req.body.name, req.body.score, req.body.difficulty)
         res.json(leaderboard)
     } catch(err) {
-        res.status(404).json({err})
+        res.status(400).json({err})
     }
 })
 
