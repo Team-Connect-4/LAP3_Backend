@@ -87,3 +87,4 @@ https://
 - Add ability to create a dedicated "lobby" for up to four players using socket.io
 - Improve "separation of concerns" in JavaScript and React files
 - Increase test coverage
+- Add animations
