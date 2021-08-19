@@ -11,7 +11,7 @@
 
 ### Deployment:
 
-https://
+https://quizzo-app.netlify.app/
 
 
 ### Technologies:
@@ -60,6 +60,14 @@ https://
 - Server will run on http://http://localhost:8080/
 - Teardown - to stop and keep data, run **docker-compose down**
 - Teardown - to stop and remove all artifacts, run **docker-compose down --volumes --remove-orphans**
+
+
+## API endpoints
+
+| Route name | Path                                   | Method        | Purpose |
+| ---------- | ---------------------------------------| ------------- | ------- |
+| create     | `/leaderboard`                         | `POST`        | Working |
+| read       | `/leaderboard`                         | `GET`         | Working |
 
 
 ### Wins
