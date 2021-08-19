@@ -18,6 +18,7 @@ https://
 
 - HTML5
 - CSS3
+- Figma
 - Tailwind CSS
 - JavaScript
 - React.js
