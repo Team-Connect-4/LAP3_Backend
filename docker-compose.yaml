@@ -1,11 +1,11 @@
-version: '3.2'
+version: "3.2"
 services:
   server:
     image: node:12.18.4
     working_dir: /code
-    ports: 
-      - 8080:8080
-    environment: 
+    ports:
+      - 2096:2096
+    environment:
       - PGUSER=connect4
       - PGHOST=db
       - PGPASSWORD=connectpass
@@ -24,7 +24,7 @@ services:
     volumes:
       - "dbdata:/var/lib/postgresql/data"
       - "./db:/docker-entrypoint-initdb.d/:ro"
-    environment: 
+    environment:
       - POSTGRES_DB=leaderboard
       - POSTGRES_USER=connect4
       - POSTGRES_PASSWORD=connectpass
